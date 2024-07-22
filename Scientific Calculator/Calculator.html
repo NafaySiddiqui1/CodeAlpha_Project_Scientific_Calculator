@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Calculator.css" />
+    <script src="Calculator.js"></script>
+    <link rel="icon" type="logo/jpg" href="calculatorfavicon.png" />
+    <title>CALCULATOR</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="heading">Scientific Calculator</h1>
+      </div>
+    </header>
+    <main>
+      <div class="calculator">
+        <input type="text" class="display" id="display" disabled />
+        <div class="buttons">
+          <button title="Left-Bracket" onclick="appendToDisplay('(')">(</button>
+          <button title="Right-Bracket" onclick="appendToDisplay(')')">
+            )
+          </button>
+          <button class="h" title="Clear" onclick="clearDisplay()">C</button>
+          <button class="h" title="Delete" onclick="deleteLast()">DEL</button>
+
+          <button title="7" onclick="appendToDisplay('7')">7</button>
+          <button title="8" onclick="appendToDisplay('8')">8</button>
+          <button title="9" onclick="appendToDisplay('9')">9</button>
+          <button title="Division" onclick="appendToDisplay('/')">/</button>
+          <button title="4" onclick="appendToDisplay('4')">4</button>
+          <button title="5" onclick="appendToDisplay('5')">5</button>
+          <button title="6" onclick="appendToDisplay('6')">6</button>
+          <button title="Multiplication" onclick="appendToDisplay('*')">
+            *
+          </button>
+          <button title="1" onclick="appendToDisplay('1')">1</button>
+          <button title="2" onclick="appendToDisplay('2')">2</button>
+          <button title="3" onclick="appendToDisplay('3')">3</button>
+          <button title="Minus" onclick="appendToDisplay('-')">-</button>
+          <button title="Dot" onclick="appendToDisplay('.')">.</button>
+          <button title="0" onclick="appendToDisplay('0')">0</button>
+          <button title="Equal" onclick="calculate()">=</button>
+          <button title="Plus" onclick="appendToDisplay('+')">+</button>
+          <button title="WholeRoot" onclick="appendToDisplay('Math.sqrt(')">
+            √
+          </button>
+          <button title="Pi" onclick="appendToDisplay('Math.PI')">π</button>
+          <button title="Exponent" onclick="appendToDisplay('Math.E')">
+            e
+          </button>
+          <button onclick="square()">x²</button>
+          <button title="Sin" onclick="appendToDisplay('Math.sin(')">
+            sin
+          </button>
+          <button title="Cos" onclick="appendToDisplay('Math.cos(')">
+            cos
+          </button>
+          <button title="Tan" onclick="appendToDisplay('Math.tan(')">
+            tan
+          </button>
+          <button title="Logarithm" onclick="appendToDisplay('Math.log(')">
+            log
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>�� 2024 Calculator</p>
+    </footer>
+  </body>
+</html>

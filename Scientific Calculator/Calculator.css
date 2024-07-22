@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-image: url(Calculatorbackgroundimage2.jpg);
+  background-position: center;
+  background-size: cover;
+  user-select: none;
+  background-repeat: no-repeat;
+  background-color: #333;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background-color: transparent;
+  padding: 26px;
+  right: 450px;
+  width: 90%;
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+  backdrop-filter: blur(15px);
+  top: 80px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  font-weight: bold;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 50px;
+  font-size: 25px;
+  border: none;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0), -5px 0px 10px black;
+  font-weight: bold;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000d0;
+  color: white;
+}
+
+button:active {
+  background-color: #cacaca;
+  color: #333;
+}
+
+.heading {
+  font-size: 90px;
+  width: 100%;
+  font-family: "Playwrite DE Grund", cursive;
+  justify-content: center;
+  bottom: 260px;
+  left: 210px;
+  position: relative;
+  -webkit-text-stroke: 1px #000000;
+  animation: infinite;
+  background-size: 300% 300% !important;
+  -webkit-animation: Gradient 100s linear infinite;
+  animation: Gradient 100s linear infinite;
+  display: flex;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url(Calculatorbackgroundimage.jpg);
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  padding: 5px;
+  top: 700px;
+  width: 100%;
+  font-weight: bold;
+  border-top: 10px solid #000000;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  background-color: #000000;
+}
+.footer p {
+  font-size: 25px;
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+}
+
+/* Media query for mobile devices (480px and below) */
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+}
+
+/* Media query for extra small devices (320px and below) */
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px;
+  }
+}
+.h {
+  background-color: rgb(208, 208, 0);
+}
+.h:hover {
+  background-color: rgba(255, 255, 0, 0.692);
+  color: #000000;
+}
+.h:active {
+  background-color: yellow;
+  color: #000000;
+}
